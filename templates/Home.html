@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Home.css') }}">
+</head>
+
+<body>
+    
+    <nav>
+        <h2>Logo</h2>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/About">About</a></li>
+        </ul>
+    </nav>
+
+
+
+    <h1>Diabetes Prediction</h1>
+
+
+    <div id="Form">
+        <form action="/predict" method="post">
+            <!-- Input fields for user data -->
+            <div class="Grp">
+                <label for="age">Age:</label>
+                <input type="text" name="age" required />
+            </div>
+
+            <div class="Grp">
+                <label for="gender">Gender:</label>
+                <select name="gender" required>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                    <option value="0">Other</option>
+                </select>
+            </div>
+
+            <div class="Grp">
+                <label for="bmi">BMI:</label>
+                <input type="text" name="bmi" required />
+            </div>
+
+            <div class="Grp">
+                <label for="bloodPressure">Blood Pressure:</label>
+                <select name="bloodPressure" required>
+                    <option value="1">Low</option>
+                    <option value="2">Normal</option>
+                    <option value="0">High</option>
+                </select>
+            </div>
+
+            <div class="Grp">
+                <label for="fbs">FBS:</label>
+                <input type="text" name="fbs" required />
+            </div>
+
+            <div class="Grp">
+                <label for="hba1c">HbA1c:</label>
+                <input type="text" name="hba1c" required />
+            </div>
+
+            <div class="Grp">
+                <label for="familyHistory">Family History of Diabetes:</label>
+                <select name="familyHistory" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="Grp">
+                <label for="smoking">Smoking:</label>
+                <select name="smoking" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="Grp">
+                <label for="diet">Diet:</label>
+                <select name="diet" required>
+                    <option value="1">Poor</option>
+                    <option value="0">Healthy</option>
+                </select>
+            </div>
+
+            <div class="Grp">
+                <label for="exercise">Exercise:</label>
+                <select name="exercise" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="Grp">
+                <label for="mlModel">ML Model:</label>
+                <select id="mlModel" name="mlModel" required>
+                    <option value="SVM">SVM</option>
+                    <option value="KNN">KNN</option>
+                    <option value="DecisionTree">Decision Tree</option>
+                    <option value="RandomForest">Random Forest</option>
+                </select>
+            </div>
+
+            <div id="BtnDiv">
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Answer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='Result.css') }}" />
+</head>
+<body>
+
+  <nav>
+    <h2>Logo</h2>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/About">About</a></li>
+    </ul>
+  </nav>
+
+  <div id="Answer">
+    <div id="Result">
+      <h2>Prediction Result:</h2>
+      <p>The predicted diagnosis is: {{ prediction }}</p>
+    </div>
+  </div>
+ 
+  
+</body>
+</html>

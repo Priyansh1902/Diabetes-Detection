@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #576574, #c2b6b6);
+  font-family: sans-serif;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+}
+
+nav ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 200px;
+}
+
+
+nav ul li a
+{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(124, 204, 230);
+    color: black;
+
+}
+
+#Answer {
+  color: white;
+  border-radius: 30px;
+  height: 300px;
+  width: 75vw;
+  margin: 100px auto;
+  background: linear-gradient(to right, #4a5764, #948d8d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

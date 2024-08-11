@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='About.css') }}">
+</head>
+<body>
+
+    <nav>
+        <h2>Logo</h2>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/About">About</a></li>
+        </ul>
+    </nav>
+
+    <div id="AboutContent">
+        <h1>About Our Health Prediction App</h1>
+
+        <div id="HealthImportance">
+            <h2>The Importance of Health</h2>
+            <p>Good health is essential for a happy and fulfilling life. It contributes to overall well-being and allows individuals to pursue their goals and dreams.</p>
+        </div>
+
+        <div id="DiabetesDangers">
+            <h2>The Dangers of Diabetes</h2>
+            <p>Diabetes is a serious health condition that can lead to various complications, including heart disease, kidney failure, and vision problems. Early detection and management are crucial for maintaining a healthy lifestyle.</p>
+        </div>
+
+        <div id="AppExplanation">
+            <h2>How Our App Works</h2>
+            <p>Our health prediction app uses machine learning algorithms to analyze user input and provide predictions related to diabetes. The app considers various factors such as age, gender, BMI, and lifestyle choices to make accurate predictions.</p>
+        </div>
+
+        <div id="AlgorithmExplanation">
+            <h2>Machine Learning Algorithms</h2>
+            <p>Our app utilizes different machine learning algorithms, including Support Vector Machines (SVM), k-Nearest Neighbors (KNN), Decision Trees, and Random Forests. Each algorithm has its strengths and weaknesses, and they are selected based on their performance for the given task.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2; /* Set your theme color */
+    font-family: Arial, sans-serif;
+    color: #333; /* Set text color */
+}
+
+nav {
+    background-color: #333; /* Set navigation background color */
+    color: #fff; /* Set navigation text color */
+    padding: 10px;
+    text-align: center;
+}
+
+nav h2 {
+    color: #fff; /* Set logo text color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Set link text color */
+    font-weight: bold;
+}
+
+#AboutContent {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333; /* Set heading text color */
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+</style>

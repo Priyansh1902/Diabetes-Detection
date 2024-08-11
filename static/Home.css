@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #576574, #C2B6B6);
+    font-family: sans-serif;
+}
+
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+}
+
+nav ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 200px;
+}
+
+
+nav ul li a
+{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(124, 204, 230);
+    color: black;
+
+}
+
+h1
+{
+    text-align: center;
+}
+#Form {
+    margin: 20px auto;
+    width: 80vw;
+    max-width: 600px; /* Set a maximum width for better responsiveness */
+    border-radius: 15px;
+    background-color: rgb(196, 187, 187);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.Grp {
+    /* background-color: black; */
+    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: space-evenly;
+    padding: 4px 5px;
+}
+
+.Grp label,
+.Grp select,
+.Grp input {
+    margin: 5px;
+}
+
+#BtnDiv {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
